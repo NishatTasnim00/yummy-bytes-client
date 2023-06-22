@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-container{
+    @apply px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20
+  }
+  
+
+  .container{
+    @apply grid gap-8  mb-8 md:grid-cols-2 lg:grid-cols-3 mx-auto
+  }
+  
+  .btn-primary{
+    @apply  bg-gradient-to-r from-pink-500 to-pink-700    
+    font-medium  transition duration-200  shadow-md  md:mb-0  px-2 py-1 md:px-5 md:py-3 m-2 lg:ml-4 text-lg rounded-lg border-none border-2  text-white 
+  }
+
+  .btn-outlined{
+  @apply border-purple-500/100 font-medium transition duration-200  shadow-md  md:mb-0  px-2 py-1 md:px-5 md:py-3 mx-auto bg-purple-200 text-lg rounded-3xl text-neutral border-2 border-purple-300;
+
+
+
+    /* @apply   border-purple-500/100
+    font-medium  transition duration-200  shadow-md  md:mb-0  px-4 py-2 md:px-8 md:py-3 m-2 text-lg rounded-lg  text-neutral hover:bg-blue-400 hover:border-transparent border-1 border-cyan-200 */
+  }
+  
+  .active{
+    @apply font-medium tracking-wide text-info transition-colors duration-200
+  }
+  
+  .default{
+    @apply font-medium tracking-wide text-pink-500 transition-colors duration-200 hover:text-info
+  }
+@layer utilities{
+  .title-text{
+    @apply animate-text bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-400 bg-clip-text text-transparent font-black
+  }
+}
+.title-2{
+  @apply bg-gradient-to-r from-pink-300 to-pink-600 text-transparent bg-clip-text text-4xl font-extrabold lg:text-5xl lg:font-bold text-center
+}
+.title-3{
+  @apply bg-gradient-to-r from-pink-300 to-pink-600 text-transparent bg-clip-text text-4xl font-extrabold lg:text-4xl lg:font-bold text-center
+}
+.text-tag{
+  @apply text-xl font-semibold text-neutral
+}
+.text-base{
+  @apply text-xl font-normal text-neutral
+}
+.text-base-2{
+  @apply text-sm font-normal text-neutral
+}
+.text-form{
+  @apply font-light text-sm text-pink-500
+}
