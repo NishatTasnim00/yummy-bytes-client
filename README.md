@@ -1,5 +1,3 @@
-# b7a10-chef-recipe-hunter-client-side-NishatTasnim00
-
 # Yummy Bytes
 ### A simple React app built with React & React Router Dom.
 ---

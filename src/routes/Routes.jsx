@@ -4,7 +4,6 @@ import '../index.css';
 import Main from '../Components/Main.jsx';
 import Home from '../Components/Home/Home';
 import ChefRecipe from '../Components/ChefRecipe/ChefRecipe';
-import Logins from '../Components/Login/Logins';
 import Login from '../Components/Login/Login';
 
 import Registration from '../Components/Registration/Registration';
@@ -39,7 +38,7 @@ const router = createBrowserRouter([
 			},
 			{
 				path: '/login',
-				element: <Logins></Logins>,
+				element: <Login></Login>,
 			},
 			{
 				path: '/registration',

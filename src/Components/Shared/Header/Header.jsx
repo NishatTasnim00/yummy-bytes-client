@@ -21,15 +21,15 @@ user && navigate('/userDetails')
 
 	return (
 		<div>
-			<div className="px-4 py-5 sm:max-w-xl md:max-w-full lg:max-w-full md:px-24 lg:px-31 bg-[#4d4466] h-32">
-				<div className="relative flex items-center justify-between">
+			<div className="px-4 py-3 sm:max-w-xl md:max-w-full lg:max-w-full md:px-24 lg:px-16 bg-[#4d4466] h-28">
+				<div className="relative flex items-center justify-between pt-0">
 					<Link
 						to="/"
 						aria-label="YummyBytes"
 						title="YummyBytes"
 						className="inline-flex items-center"
 					>
-						<div className="ml-2 text-3xl font-bold tracking-wide text-pink-700">
+						<div className="ml-2 lg:ml-1 text-3xl font-bold tracking-wide text-pink-700 ">
 							Yummy Bytes
 						</div>
 					</Link>
@@ -82,13 +82,15 @@ user && navigate('/userDetails')
 								</figure>
 
 								<button onClick={handleLogOut} className="btn-primary">
-									Log Out
+									<span className="px-2">Log Out</span>
 								</button>
 							</div>
 						) : (
 							<>
 								<Link to="/login">
-									<button className="btn-primary">Login</button>
+									<button className="btn-primary">
+										<span className="px-2">Login</span>
+									</button>
 								</Link>
 							</>
 						)}
